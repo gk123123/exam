@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages {
+        stage ("code") {
+            steps {
+                echo "cloning"
+                git url:https://github.com/gk123123/exam.git, branch:"main"
+            }
+        }
+    }
+}
